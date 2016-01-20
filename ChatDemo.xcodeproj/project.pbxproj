@@ -16,6 +16,7 @@
 		C57310671C4FE78700671A26 /* ChatDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C57310661C4FE78700671A26 /* ChatDemoTests.m */; };
 		C57310721C4FE78700671A26 /* ChatDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C57310711C4FE78700671A26 /* ChatDemoUITests.m */; };
 		C57310821C4FEC9B00671A26 /* ChatLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = C57310811C4FEC9B00671A26 /* ChatLineView.m */; };
+		C57310851C4FEDF200671A26 /* ContextDraw.m in Sources */ = {isa = PBXBuildFile; fileRef = C57310841C4FEDF200671A26 /* ContextDraw.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		C57310731C4FE78700671A26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C57310801C4FEC9B00671A26 /* ChatLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatLineView.h; sourceTree = "<group>"; };
 		C57310811C4FEC9B00671A26 /* ChatLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatLineView.m; sourceTree = "<group>"; };
+		C57310831C4FEDF200671A26 /* ContextDraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextDraw.h; sourceTree = "<group>"; };
+		C57310841C4FEDF200671A26 /* ContextDraw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextDraw.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +152,8 @@
 			children = (
 				C57310801C4FEC9B00671A26 /* ChatLineView.h */,
 				C57310811C4FEC9B00671A26 /* ChatLineView.m */,
+				C57310831C4FEDF200671A26 /* ContextDraw.h */,
+				C57310841C4FEDF200671A26 /* ContextDraw.m */,
 			);
 			path = ChatFiles;
 			sourceTree = "<group>";
@@ -285,6 +290,7 @@
 			files = (
 				C57310821C4FEC9B00671A26 /* ChatLineView.m in Sources */,
 				C57310541C4FE78600671A26 /* ViewController.m in Sources */,
+				C57310851C4FEDF200671A26 /* ContextDraw.m in Sources */,
 				C57310511C4FE78600671A26 /* AppDelegate.m in Sources */,
 				C573104E1C4FE78600671A26 /* main.m in Sources */,
 			);

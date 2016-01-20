@@ -15,6 +15,7 @@
 		C573105C1C4FE78700671A26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C573105A1C4FE78700671A26 /* LaunchScreen.storyboard */; };
 		C57310671C4FE78700671A26 /* ChatDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C57310661C4FE78700671A26 /* ChatDemoTests.m */; };
 		C57310721C4FE78700671A26 /* ChatDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C57310711C4FE78700671A26 /* ChatDemoUITests.m */; };
+		C57310821C4FEC9B00671A26 /* ChatLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = C57310811C4FEC9B00671A26 /* ChatLineView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		C573106D1C4FE78700671A26 /* ChatDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57310711C4FE78700671A26 /* ChatDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatDemoUITests.m; sourceTree = "<group>"; };
 		C57310731C4FE78700671A26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C57310801C4FEC9B00671A26 /* ChatLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatLineView.h; sourceTree = "<group>"; };
+		C57310811C4FEC9B00671A26 /* ChatLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatLineView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		C573104B1C4FE78600671A26 /* ChatDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C573107F1C4FEC9B00671A26 /* ChatFiles */,
 				C573104F1C4FE78600671A26 /* AppDelegate.h */,
 				C57310501C4FE78600671A26 /* AppDelegate.m */,
 				C57310521C4FE78600671A26 /* ViewController.h */,
@@ -138,6 +142,15 @@
 				C57310731C4FE78700671A26 /* Info.plist */,
 			);
 			path = ChatDemoUITests;
+			sourceTree = "<group>";
+		};
+		C573107F1C4FEC9B00671A26 /* ChatFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C57310801C4FEC9B00671A26 /* ChatLineView.h */,
+				C57310811C4FEC9B00671A26 /* ChatLineView.m */,
+			);
+			path = ChatFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C57310821C4FEC9B00671A26 /* ChatLineView.m in Sources */,
 				C57310541C4FE78600671A26 /* ViewController.m in Sources */,
 				C57310511C4FE78600671A26 /* AppDelegate.m in Sources */,
 				C573104E1C4FE78600671A26 /* main.m in Sources */,
@@ -496,6 +510,7 @@
 				C57310781C4FE78700671A26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C57310791C4FE78700671A26 /* Build configuration list for PBXNativeTarget "ChatDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +519,7 @@
 				C573107B1C4FE78700671A26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C573107C1C4FE78700671A26 /* Build configuration list for PBXNativeTarget "ChatDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +528,7 @@
 				C573107E1C4FE78700671A26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

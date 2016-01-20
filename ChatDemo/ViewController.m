@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ChatLineView.h"
 
 @interface ViewController ()
 
@@ -18,7 +19,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    NSLog(@"xxxxx");
+    ChatLineView *sport = [[ChatLineView alloc] initWithFrame:CGRectMake(0, 60, self.view.frame.size.width, 200)];
+    
+    [self.view addSubview:sport];
 }
 
 - (void)didReceiveMemoryWarning {

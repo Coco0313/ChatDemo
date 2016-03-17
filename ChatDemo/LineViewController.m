@@ -57,11 +57,14 @@
     [_capJoinWithBackgroundView addSubview:_joinSegment];
     
     _widthSlider = [[UISlider alloc] initWithFrame:CGRectMake(40, 270, self.view.frame.size.width-80, 20)];
-    _widthSlider.maximumValue = 20;
-    _widthSlider.minimumValue = 2;
+    _widthSlider.maximumValue = 50;
+    _widthSlider.minimumValue = 10;
+    _widthSlider.value = _widthSlider.minimumValue;
     [_widthSlider addTarget:self action:@selector(widthAction) forControlEvents:UIControlEventValueChanged];
     [_capJoinWithBackgroundView addSubview:_widthSlider];
     
+    // default values
+    [_capJoinWithView setWidth:_widthSlider.value];
     [self segmentAction:_capSegment];
     [self segmentAction:_joinSegment];
 }
@@ -72,12 +75,12 @@
     switch (segment.tag) {
         case 100:
         {
-            _capJoinWithView.cap = (selectIndex==0 ? kCGLineCapButt : (selectIndex == 1 ? kCGLineCapRound : kCGLineCapSquare));
+            _capJoinWithView.cap = (int32_t)segment.selectedSegmentIndex;
             break;
         }
         case 101:
         {
-            _capJoinWithView.join = (selectIndex==0 ? kCGLineJoinMiter : (selectIndex == 1 ? kCGLineJoinRound : kCGLineJoinBevel));
+            _capJoinWithView.join = (int32_t)segment.selectedSegmentIndex;
             break;
         }
     }

@@ -73,38 +73,30 @@
 
 @implementation QuartzCapJoinWidthView
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        self.cap = kCGLineCapButt;
-        self.join = kCGLineJoinMiter;
-        self.width = 15.0;
-    }
-    return self;
-}
 
 -(void)drawInContext:(CGContextRef)context
 {
+    // Drawing lines with a white stroke color
     CGContextSetRGBStrokeColor(context, 1.0, 1.0, 1.0, 1.0);
     
-    // 保存当前绘图状态到绘图栈中，相当于push，但是路径是不能保存的
+    // Preserve the current drawing state
     CGContextSaveGState(context);
     
-    // 画一条水平线
+    // Setup the horizontal line to demostrate caps
     CGContextMoveToPoint(context, 40.0, 20);
-    CGContextAddLineToPoint(context, self.frame.size.width-80, 20);
+    CGContextAddLineToPoint(context, 280, 20);
 
+    // Set the line width & cap for the cap demo
     CGContextSetLineWidth(context, self.width);
     CGContextSetLineCap(context, self.cap);
     CGContextStrokePath(context);
     
     
     // Restore the previous drawing state, and save it again.
-    // 恢复绘图栈中的状态，相当于pop
     CGContextRestoreGState(context);
     CGContextSaveGState(context);
     
+    // Setup the angled line to demonstrate joins
     CGContextMoveToPoint(context, 40, 130);
     CGContextAddLineToPoint(context, 160, 60);
     CGContextAddLineToPoint(context, 280, 130);
@@ -115,7 +107,6 @@
     CGContextStrokePath(context);
     
     // Restore the previous drawing state.
-    // 恢复绘制栈中的绘图状态
     CGContextRestoreGState(context);
     
     
@@ -125,7 +116,7 @@
         CGContextSetRGBStrokeColor(context, 1.0, 0.0, 0.0, 1.0);
         
         CGContextMoveToPoint(context, 40.0, 20);
-        CGContextAddLineToPoint(context, self.frame.size.width-80, 20.0);
+        CGContextAddLineToPoint(context, 280, 20.0);
         
         CGContextMoveToPoint(context, 40.0, 130.0);
         CGContextAddLineToPoint(context, 160.0, 60);

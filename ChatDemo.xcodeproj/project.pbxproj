@@ -18,6 +18,10 @@
 		C57310821C4FEC9B00671A26 /* ChatLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = C57310811C4FEC9B00671A26 /* ChatLineView.m */; };
 		C57310851C4FEDF200671A26 /* ContextDraw.m in Sources */ = {isa = PBXBuildFile; fileRef = C57310841C4FEDF200671A26 /* ContextDraw.m */; };
 		C5D21E471C8339A2000B1EF0 /* DrawReadMe in Resources */ = {isa = PBXBuildFile; fileRef = C5D21E461C8339A2000B1EF0 /* DrawReadMe */; };
+		C5D5385C1C9AE0F8001DD940 /* QuartzLinesView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D538591C9AE0F8001DD940 /* QuartzLinesView.m */; };
+		C5D5385D1C9AE0F8001DD940 /* QuartzView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5385B1C9AE0F8001DD940 /* QuartzView.m */; };
+		C5D538601C9AE135001DD940 /* LineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5385F1C9AE135001DD940 /* LineViewController.m */; };
+		C5D538631C9AE160001DD940 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D538621C9AE160001DD940 /* BaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,14 @@
 		C57310831C4FEDF200671A26 /* ContextDraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextDraw.h; sourceTree = "<group>"; };
 		C57310841C4FEDF200671A26 /* ContextDraw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextDraw.m; sourceTree = "<group>"; };
 		C5D21E461C8339A2000B1EF0 /* DrawReadMe */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DrawReadMe; sourceTree = "<group>"; };
+		C5D538581C9AE0F8001DD940 /* QuartzLinesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzLinesView.h; sourceTree = "<group>"; };
+		C5D538591C9AE0F8001DD940 /* QuartzLinesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzLinesView.m; sourceTree = "<group>"; };
+		C5D5385A1C9AE0F8001DD940 /* QuartzView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzView.h; sourceTree = "<group>"; };
+		C5D5385B1C9AE0F8001DD940 /* QuartzView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzView.m; sourceTree = "<group>"; };
+		C5D5385E1C9AE135001DD940 /* LineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineViewController.h; sourceTree = "<group>"; };
+		C5D5385F1C9AE135001DD940 /* LineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineViewController.m; sourceTree = "<group>"; };
+		C5D538611C9AE160001DD940 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		C5D538621C9AE160001DD940 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,11 +121,16 @@
 		C573104B1C4FE78600671A26 /* ChatDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C5D538571C9AE0F8001DD940 /* Lines */,
 				C573107F1C4FEC9B00671A26 /* ChatFiles */,
 				C573104F1C4FE78600671A26 /* AppDelegate.h */,
 				C57310501C4FE78600671A26 /* AppDelegate.m */,
+				C5D538611C9AE160001DD940 /* BaseViewController.h */,
+				C5D538621C9AE160001DD940 /* BaseViewController.m */,
 				C57310521C4FE78600671A26 /* ViewController.h */,
 				C57310531C4FE78600671A26 /* ViewController.m */,
+				C5D5385E1C9AE135001DD940 /* LineViewController.h */,
+				C5D5385F1C9AE135001DD940 /* LineViewController.m */,
 				C57310551C4FE78600671A26 /* Main.storyboard */,
 				C57310581C4FE78600671A26 /* Assets.xcassets */,
 				C573105A1C4FE78700671A26 /* LaunchScreen.storyboard */,
@@ -159,6 +176,17 @@
 				C57310841C4FEDF200671A26 /* ContextDraw.m */,
 			);
 			path = ChatFiles;
+			sourceTree = "<group>";
+		};
+		C5D538571C9AE0F8001DD940 /* Lines */ = {
+			isa = PBXGroup;
+			children = (
+				C5D538581C9AE0F8001DD940 /* QuartzLinesView.h */,
+				C5D538591C9AE0F8001DD940 /* QuartzLinesView.m */,
+				C5D5385A1C9AE0F8001DD940 /* QuartzView.h */,
+				C5D5385B1C9AE0F8001DD940 /* QuartzView.m */,
+			);
+			path = Lines;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,10 +321,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C57310821C4FEC9B00671A26 /* ChatLineView.m in Sources */,
+				C5D538631C9AE160001DD940 /* BaseViewController.m in Sources */,
 				C57310541C4FE78600671A26 /* ViewController.m in Sources */,
 				C57310851C4FEDF200671A26 /* ContextDraw.m in Sources */,
+				C5D5385C1C9AE0F8001DD940 /* QuartzLinesView.m in Sources */,
 				C57310511C4FE78600671A26 /* AppDelegate.m in Sources */,
 				C573104E1C4FE78600671A26 /* main.m in Sources */,
+				C5D538601C9AE135001DD940 /* LineViewController.m in Sources */,
+				C5D5385D1C9AE0F8001DD940 /* QuartzView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
